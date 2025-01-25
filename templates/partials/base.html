@@ -1,0 +1,40 @@
+<!Doctype html>
+
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title> PythonBank -{% block title %} {% endblock title %}</title>
+<head>
+<body>
+    <header>
+        <h1>Bem-vindo à sua página</h1>
+      </header>
+      <nav>
+        <a href="#home">Início</a>
+        <a href="#sua_conta">Sua Conta</a>
+        <a href="#extrato">Extrato</a>
+      </nav>
+      <main>
+        <h2>Conteúdo Principal</h2>
+        <p>Este é um exemplo de layout responsivo em HTML.</p>
+      </main>
+
+
+      {% block content %}
+      {% endblock content%}
+
+      <footer>
+
+
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a href="#logout">Logout</a>
+        <p>&copy; 2025 PythonBank. Todos os direitos reservados.</p>
+      </footer>
+</body>
+
+</html>
